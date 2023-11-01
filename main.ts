@@ -1,4 +1,4 @@
-namespace dungeons {
+namespace plunge {
     export function Generate_Dungeon (length: number, width: number) {
         tiles.setCurrentTilemap(tilemap`GeneratedDungeon`)
         for (let xIndex = 0; xIndex <= length; xIndex++) {
