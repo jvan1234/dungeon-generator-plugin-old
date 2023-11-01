@@ -5,7 +5,7 @@ namespace Dungeon_Generation {
      * @param length describes how long the dungeon will be, in tiles. eg: 10
      */
     //% block
-    export function Generate_Random_Dungeon(length: number, width: number, water_chance: number) {
+    export function Generate_Dungeon(length: number, width: number, water_chance: number) {
         let yIndex: number;
         let yIndex2: number;
         tiles.setCurrentTilemap(tilemap`GeneratedDungeon`)
