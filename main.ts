@@ -1,18 +1,14 @@
-/**
- * TODO: Description of Function
- */
-//% weight=100 color=#994C00 icon="f0f7"
+//% weight=100 color=#CC6600 icon="▓"
 namespace Dungeon_Generation {
     /**
      * TODO: This function generates a random dungeon given some parameters
      * @param length describes how long the dungeon will be, in tiles. eg: 10
      */
+    //% block
     export function Generate_Random_Dungeon(length: number, width: number, water_chance: number) {
         let yIndex: number;
         let yIndex2: number;
-        tiles.setCurrentTilemap(tilemap`
-            GeneratedDungeon
-        `)
+        tiles.setCurrentTilemap(tilemap`GeneratedDungeon`)
         tiles.setTileAt(tiles.getTileLocation(1, 1), assets.tile`
                 myTile
             `)
@@ -65,4 +61,3 @@ namespace Dungeon_Generation {
         }
     }
 }
-Generate_Random_Dungeon(6, 6, 10)
